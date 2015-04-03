@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="ro.pub.cs.systems.pdsd.practicaltest01var05.PracticalTest01Var05SecondaryActivity" >
+
+    <TextView
+        android:id="@+id/coord_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:saveEnabled="false"
+        android:enabled="false"
+        android:inputType="number"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/coord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:saveEnabled="false"
+        android:enabled="false"   
+        android:inputType="text"
+        android:gravity="center" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+	    
+        <ScrollView
+            android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1">
+    
+		    <Button
+		        android:id="@+id/register_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="@string/register" />
+
+	    </ScrollView>
+	    
+        <ScrollView
+            android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1">
+	    
+		    <Button
+		        android:id="@+id/cancel_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="@string/cancel" />
+	    
+	    </ScrollView>
+    
+    </LinearLayout>
+
+</LinearLayout>
